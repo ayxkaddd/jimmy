@@ -2,11 +2,11 @@
 
 package_name="libsixel"
 
-echo "checking if libsixel is installed"
+echo "checking if $package_name is installed"
 
 if pacman -Qs "$package_name" > /dev/null; then
     echo "$package_name is installed"
-    read -p "continue to installation? (Y/n)" choice
+    read -p "continue to installation? (Y/n): " choice
 
     if [[ "$choice" == "yes" || "$choice" == "y" || "$choice" == "Y" ]]; then
         echo "okay"
@@ -29,12 +29,17 @@ fi
 echo "cloning repo to /tmp/ folder..."
 cd /tmp/
 git clone https://github.com/ayxkaddd/jimmy
+
 clear
+
 echo "installing..."
+
 chmod +x jimmy
 sudo mv jimmy /usr/local/bin/
+
 mkdir -p $HOME/.local/jimmy/
 mv pics/* $HOME/.local/jimmy/
+
 echo "cleaning..."
 rm -rf /tmp/jimmy
 echo "! Done !"

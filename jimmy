@@ -1,0 +1,18 @@
+#!/bin/bash
+clear
+
+json=$(hyprctl activewindow -j | jq .size)
+
+aHEIGHT=$(echo "$json" | jq '.[1] / 1.3 | floor')
+aWIDTH=$(echo "$json" | jq '.[0]')
+
+if [ -z $1 ]; then
+    img2sixel -h $aHEIGHT -w $aWIDTH $HOME/.local/jimmy/Jimmy_McGill_BCS_S3.png
+elif [ $1 == "-v1" ]; then 
+    img2sixel -h $aHEIGHT -w $aWIDTH $HOME/.local/jimmy/Jimmy_McGill_BCS_S3.png
+elif [ $1 == "-v2" ]; then
+    img2sixel -h $aHEIGHT -w $aWIDTH $HOME/.local/jimmy/jimmykekz.jpg
+else
+    figlet -c "no jimmy."
+fi
+
