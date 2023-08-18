@@ -1,6 +1,6 @@
 # jimmy
 
-jimmy is a funny ahh bash script for hyprland and terminals with sixel support like foot
+jimmy is a funny ahh bash script for terminals with sixel support like foot
 
 # installation
 
