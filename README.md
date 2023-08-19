@@ -10,9 +10,8 @@ u can install it manually or use a script
 
 # deps
 
-* libsixel
+* libsixel and terminal which support it
 * figlet (install manually cuz i was lazy to add it to install script)
-
 ---
 
 <p align="center"><img src="https://github.com/ayxkaddd/jimmy/blob/main/pics/jimmykekz.jpg?raw=true" height=250 width=600></p>
