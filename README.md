@@ -14,5 +14,5 @@ u can install it manually or use a script
 * figlet (install manually cuz i was lazy to add it to install script)
 ---
 
-<p align="center"><img src="https://github.com/ayxkaddd/jimmy/blob/main/pics/jimmykekz.jpg?raw=true" height=250 width=600></p>
+<p align="center"><img src="https://raw.githubusercontent.com/ayxkaddd/jimmy/c8033a8ed66450ab37854eb59c08149d233af36f/pics/jimmyspining.gif" height=250 width=600></p>
 
