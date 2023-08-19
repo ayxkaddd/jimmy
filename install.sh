@@ -6,24 +6,9 @@ echo "checking if $package_name is installed"
 
 if pacman -Qs "$package_name" > /dev/null; then
     echo "$package_name is installed"
-    read -p "continue to installation? (Y/n): " choice
-
-    if [[ "$choice" == "yes" || "$choice" == "y" || "$choice" == "Y" ]]; then
-        echo "okay"
-    else
-        echo "bleeeh. bye"
-        exit 0
-    fi
 else
     echo "$package_name is not installed"
-    read -p "do you want to install $package_name? (Y/n): " choice
-
-    if [[ "$choice" == "yes" || "$choice" == "y"  || "$choice" == "Y" ]]; then
-        sudo pacman -S "$package_name"
-    else
-        echo "bleeeh. bye"
-        exit 0
-    fi
+    sudo pacman -S "$package_name"
 fi
 
 echo "cloning repo to /tmp/ folder..."
