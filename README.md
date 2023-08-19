@@ -10,7 +10,7 @@ u can install it manually or use a script
 
 # deps
 
-* libsixel and terminal which support it
+* libsixel and terminal which support it (foot for wayland, mlterm for X)
 * figlet (install manually cuz i was lazy to add it to install script)
 ---
 
