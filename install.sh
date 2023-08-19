@@ -41,6 +41,6 @@ mkdir -p $HOME/.local/jimmy/
 mv pics/* $HOME/.local/jimmy/
 
 echo "cleaning..."
-rm -rf /tmp/jimmy
+rm -rf /tmp/jimmy/
 echo "! Done !"
 

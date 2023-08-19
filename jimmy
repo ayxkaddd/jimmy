@@ -10,6 +10,11 @@ elif [ $1 == "-v1" ]; then
     img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/jimmy/Jimmy_McGill_BCS_S3.png
 elif [ $1 == "-v2" ]; then
     img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/jimmy/jimmykekz.jpg
+elif [ $1 == "-g" ]; then
+    mpv --loop "$HOME/.local/jimmy/saultheme.aac" > /dev/null 2>&1 &
+    mpv_pid=$!
+    img2sixel -h $HEIGHT -w $WIDTH /home/ayx/pics/jimmyspining.gif
+    kill -9 $mpv_pid
 else
     figlet -c "no jimmy."
 fi
