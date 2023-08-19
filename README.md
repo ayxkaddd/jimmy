@@ -6,7 +6,7 @@ jimmy is a funny ahh bash script for terminals with sixel support like foot
 
 u can install it manually or use a script
 
-```curl https://github.com/ayxkaddd/jimmy/raw/main/install.sh | sh```
+```curl https://raw.githubusercontent.com/ayxkaddd/jimmy/main/install.sh | sh ``` 
 
 # deps
 
