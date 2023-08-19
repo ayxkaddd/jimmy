@@ -15,15 +15,13 @@ echo "cloning repo to /tmp/ folder..."
 cd /tmp/
 git clone https://github.com/ayxkaddd/jimmy
 
-clear
-
 echo "installing..."
 
-chmod +x jimmy
-sudo mv jimmy /usr/local/bin/
+chmod +x /tmp/jimmy/jimmy
+sudo mv /tmp/jimmy/jimmy /usr/local/bin/
 
 mkdir -p $HOME/.local/jimmy/
-mv pics/* $HOME/.local/jimmy/
+mv /tmp/jimmy/pics/* $HOME/.local/jimmy/
 
 echo "cleaning..."
 rm -rf /tmp/jimmy/
