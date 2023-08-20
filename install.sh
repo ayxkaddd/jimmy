@@ -12,8 +12,7 @@ else
 fi
 
 echo "cloning repo to /tmp/ folder..."
-cd /tmp/
-git clone https://github.com/ayxkaddd/jimmy
+git clone https://github.com/ayxkaddd/jimmy /tmp/jimmy/
 
 echo "installing..."
 
