@@ -19,8 +19,8 @@ echo "installing..."
 chmod +x /tmp/jimmy/jimmy
 sudo mv /tmp/jimmy/jimmy /usr/local/bin/
 
-mkdir -p $HOME/.local/jimmy/
-mv /tmp/jimmy/pics/* $HOME/.local/jimmy/
+mkdir -p $HOME/.local/share/jimmy/
+mv /tmp/jimmy/pics/* $HOME/.local/share/jimmy/
 
 echo "cleaning..."
 rm -rf /tmp/jimmy/
