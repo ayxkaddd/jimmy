@@ -20,7 +20,7 @@ chmod +x /tmp/jimmy/jimmy
 sudo mv /tmp/jimmy/jimmy /usr/local/bin/
 
 mkdir -p $HOME/.local/share/jimmy/
-mv /tmp/jimmy/pics/* $HOME/.local/share/jimmy/
+mv /tmp/jimmy/assets/* $HOME/.local/share/jimmy/
 
 echo "cleaning..."
 rm -rf /tmp/jimmy/
