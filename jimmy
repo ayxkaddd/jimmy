@@ -10,6 +10,8 @@ elif [ $1 == "-v1" ]; then
     img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/share/jimmy/Jimmy_McGill_BCS_S3.png
 elif [ $1 == "-v2" ]; then
     img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/share/jimmy/jimmykekz.jpg
+elif [ $1 == "-c" ]; then
+    img2sixel -h $HEIGHT -w $WIDTH $2 
 elif [ $1 == "-g" ]; then
     mpv --loop "$HOME/.local/jimmy/saultheme.aac" > /dev/null 2>&1 &
     mpv_pid=$!
