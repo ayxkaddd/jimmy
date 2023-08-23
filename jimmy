@@ -5,7 +5,12 @@ HEIGHT=$(($(tput lines) * 972 / 44))
 WIDTH=$(($(tput cols) * 1023 / 97))
 
 if [ -z $1 ]; then
-    img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/share/jimmy/Jimmy_McGill_BCS_S3.png
+    random_number=$((RANDOM % 2 + 1))
+    if [ $random_number -eq 1 ]; then
+        img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/share/jimmy/Jimmy_McGill_BCS_S3.png
+    else
+        img2sixel -g -h $HEIGHT -w $WIDTH $HOME/.local/share/jimmy/installhyprland.gif
+    fi
 elif [ $1 == "-v1" ]; then 
     img2sixel -h $HEIGHT -w $WIDTH $HOME/.local/share/jimmy/Jimmy_McGill_BCS_S3.png
 elif [ $1 == "-v2" ]; then
